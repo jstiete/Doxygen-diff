@@ -1,0 +1,47 @@
+# --- Python -----------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# packaging / build artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+wheels/
+*.whl
+
+# virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# test / coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+.coverage.*
+
+# --- IDE ----------------------------------------------------------------
+.idea/
+.vscode/
+
+# --- doxydiff-specific ---------------------------------------------------
+# Generated report output (regenerate with `doxydiff ...` / `python -m doxydiff.cli`)
+/report/
+report_ci_test/
+*_summary.json
+
+# Third-party binaries (Doxygen is GPL-2.0, download from doxygen.nl)
+/tools/
+
+# Doxygen-generated output for the demo project (regenerate with `doxygen Doxyfile`)
+demo-project/*/doxygen-out/
+
+# --- OS -------------------------------------------------------------------
+Thumbs.db
+.DS_Store
